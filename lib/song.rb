@@ -7,7 +7,6 @@ class Song
       self.artist = artist
     end
     if genre
-      binding.pry
       self.genre = genre
     end
   end
