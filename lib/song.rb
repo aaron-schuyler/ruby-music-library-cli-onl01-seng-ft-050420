@@ -3,7 +3,6 @@ class Song
   @@all = []
   def initialize(name)
     @name = name
-    self.save
   end
   def self.all
     @@all
@@ -13,5 +12,9 @@ class Song
   end
   def self.destroy_all
     @@all = []
+  end
+  def self.create(name)
+    @name = name
+    self.save
   end
 end
