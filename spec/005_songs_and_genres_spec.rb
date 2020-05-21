@@ -23,7 +23,7 @@ describe "Associations — Song and Genre:" do
       it "can be invoked with an optional third argument, a Genre object to be assigned to the song's 'genre' property (song belongs to genre)" do
         artist = Artist.new("Neutral Milk Hotel")
         song_with_artist_and_genre = Song.new("In the Aeroplane Over the Sea", artist, genre).save
-
+        binding.pry
         expect(song_with_artist_and_genre.instance_variable_defined?(:@genre)).to be(true)
         expect(song_with_artist_and_genre.instance_variable_get(:@genre)).to be(genre)
       end
