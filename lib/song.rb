@@ -3,6 +3,7 @@ class Song
   @@all = []
   def initialize(name, artist)
     @name = name
+    @artist = artist
   end
   def self.all
     @@all
