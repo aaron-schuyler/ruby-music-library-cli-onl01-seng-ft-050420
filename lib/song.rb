@@ -6,6 +6,9 @@ class Song
     if artist
       self.artist = artist
     end
+    if genre
+      self.artist = genre
+    end
   end
   def self.all
     @@all
